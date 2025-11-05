@@ -1,0 +1,4 @@
+# Splunk Query - RDP Brute Force Detection
+index=wineventlog sourcetype=WinEventLog:Security EventCode=4625 LogonType=3 OR LogonType=10
+| stats count by Account_Name, Source_Network_Address, ComputerName
+| where count > 5
