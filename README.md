@@ -73,4 +73,11 @@ Notes / Limitations
 
 Splunk trial may limit alerting; this project focuses on detection & visibility.
 
+
 All activity performed in an isolated lab VM network.
+
+**Highlights**
+- Detects repeated failed RDP logons (**Event ID 4625**).
+- PowerShell watcher script + sample alert log.
+- Splunk search and dashboard panel with screenshots.
+- Fully reproducible steps in a home lab (Windows VM + Kali).
